@@ -7,7 +7,7 @@
   // Trayectoria y Experiencia Profesional
   const experiencesData = [
     {
-      period: "2024 — Actual",
+      period: "2024 — 2026",
       role: "Jesus — Full Stack Developer",
       company: "Enoc Labs agency",
       description:
