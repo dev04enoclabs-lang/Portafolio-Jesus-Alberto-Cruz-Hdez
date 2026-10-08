@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Alberto Cruz Hernandez | Portfolio</title>
+    <meta name="description"
+        content="Desarrollador de software especializado en diseño y desarrollo de soluciones frontend, backend y móvil.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-main text-primary">
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">JACH<span>.</span></a>
+            <nav class="nav-menu">
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#experiencia" class="nav-link">Trayectoria</a>
+                <a href="#educacion" class="nav-link">Educación</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="btn btn-outline">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero-section reveal">
+            <div class="container">
+                <div class="badge">Disponible para nuevos proyectos</div>
+                <h1 class="hero-title">Jesus Alberto<br><span class="text-highlight">Cruz Hernandez</span></h1>
+                <p class="hero-role">Full Stack Software Developer</p>
+                <p class="hero-summary">
+                    Desarrollador de software desde 2024, especializado en el diseño e implementación de soluciones
+                    tecnológicas integrales (Frontend & Backend).
+                </p>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos Destacados</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ / ENFOQUE -->
+        <section id="sobre-mi" class="section border-top reveal">
+            <div class="container">
+                <div class="section-grid-header">
+                    <span class="section-label">[ 01 / PERFIL ]</span>
+                    <h2 class="section-title">Enfoque y Especialidad</h2>
+                </div>
+                <div class="row-3-col content-row">
+                    <div class="col-meta">
+                        <span class="meta-tag">Áreas Core</span>
+                    </div>
+                    <div class="col-title">
+                        <h3>Arquitectura & Soluciones Integrales</h3>
+                    </div>
+                    <div class="col-desc">
+                        <p>
+                            Construcción de aplicaciones escalables y eficientes cubriendo el ciclo completo de vida del
+                            software: diseño de interfaces limpias, desarrollo de APIs robustas y aplicaciones
+                            multiplataforma.
+                        </p>
+                        <div class="skills-chips">
+                            <span class="chip">Frontend (HTML5/CSS3/JS/React)</span>
+                            <span class="chip">Backend & REST APIs</span>
+                            <span class="chip">Desarrollo Móvil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA / TRAYECTORIA (3 Columnas estructuradas) -->
+        <section id="experiencia" class="section border-top reveal">
+            <div class="container">
+                <div class="section-grid-header">
+                    <span class="section-label">[ 02 / TRAYECTORIA ]</span>
+                    <h2 class="section-title">Experiencia Profesional</h2>
+                </div>
+
+                <!-- Contenedor dinámico rellenado por js/main.js -->
+                <div id="experience-container" class="table-list">
+                    <!-- Fallback semántico mientras carga JS -->
+                    <div class="row-3-col item-row">
+                        <div class="col-meta">
+                            <span class="period">2024 — Actual</span>
+                        </div>
+                        <div class="col-title">
+                            <h3 class="role-title">Jesus — Full Stack Developer</h3>
+                            <span class="company-name">Enoc Labs agency</span>
+                        </div>
+                        <div class="col-desc">
+                            <p class="item-description">
+                                Desarrollo y soporte para El Gran Corral, Drill Balance, Check IO, Mi FutX & más...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCACIÓN (3 Columnas) -->
+        <section id="educacion" class="section border-top reveal">
+            <div class="container">
+                <div class="section-grid-header">
+                    <span class="section-label">[ 03 / FORMACIÓN ]</span>
+                    <h2 class="section-title">Educación Académica</h2>
+                </div>
+
+                <!-- Contenedor dinámico o estructurado -->
+                <div id="education-container" class="table-list">
+                    <div class="row-3-col item-row">
+                        <div class="col-meta">
+                            <span class="period">Formación Técnica</span>
+                        </div>
+                        <div class="col-title">
+                            <h3 class="role-title">Técnico en Programación</h3>
+                            <span class="company-name">Centro de Bachillerato Tecnológico Agropecuario No.179</span>
+                        </div>
+                        <div class="col-desc">
+                            <p class="item-description">
+                                Fundamentos sólidos de algoritmos, estructuras de datos, lógica de desarrollo de
+                                sistemas, bases de datos y principios de arquitectura de software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS DESTACADOS (Renderizado dinámico con JS) -->
+        <section id="proyectos" class="section border-top reveal">
+            <div class="container">
+                <div class="section-grid-header">
+                    <span class="section-label">[ 04 / PORTAFOLIO ]</span>
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                </div>
+
+                <div id="projects-grid" class="projects-grid">
+                    <!-- Renderizado dinámicamente vía js/main.js -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section border-top reveal">
+            <div class="container">
+                <div class="section-grid-header">
+                    <span class="section-label">[ 05 / CONTACTO ]</span>
+                    <h2 class="section-title">Mis redes</h2>
+                </div>
+                <div class="contact-box">
+                    <p class="contact-text">
+                        Disponible para colaborar en productos digitales, desarrollo web a medida y soluciones full
+                        stack.
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/jesus-alberto-cruz-hernandez" class="contact-cta"
+                            target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://github.com/jesuscruz" class="contact-cta" target="_blank"
+                            rel="noopener noreferrer">GitHub &rarr;</a>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:jesus.cruz@example.com" class="contact-cta">Correo Electrónico &rarr;</a>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="https://wa.me/1234567890" class="contact-cta" target="_blank"
+                            rel="noopener noreferrer">WhatsApp &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer border-top">
+        <div class="container footer-content">
+            <p>&copy; 2025 Jesus Alberto Cruz Hernandez. Todos los derechos reservados.</p>
+            <div class="footer-meta">
+                <span>Diseño limpio &bull; Dark Mode &bull; Vanilla JS</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
