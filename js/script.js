@@ -34,16 +34,9 @@
       role: "Full Stack Developer",
       description:
         "Desarrollo e implementación de una plataforma web para la gestión de ventas y atención en restaurantes. Permite al personal de servicio tomar pedidos de los clientes y procesar solicitudes de cuenta de forma ágil. Incluye un módulo de seguridad con expiración de sesión por inactividad y la generación de tickets digitales enviados directamente al correo electrónico del cliente.",
-      technologies: [
-        "Laravel 12",
-        "PHP",
-        "MVC",
-        "JavaScript",
-        "CSS3",
-        "Blade",
-        "MySQL",
-      ],
-      link: "#",
+      technologies: [],
+      link: "https://github.com/dev04enoclabs-lang/Chtacos-web",
+      id: "chtacos",
     },
     {
       title: "Bimbo — Plataforma Management & Control de Ventas",
@@ -51,15 +44,8 @@
       role: "Full Stack Developer (En desarrollo)",
       description:
         "Desarrollo Frontend y Backend para plataforma de administración corporativa. Implementación de módulos para el control de dispositivos, gestión de usuarios por departamento y visualización analítica de ventas en tiempo real.",
-      technologies: [
-        "Laravel 12",
-        "PHP",
-        "MVC",
-        "JavaScript",
-        "REST APIs",
-        "MySQL",
-      ],
-      link: "#", // O puedes colocar la URL con una nota de sistema privado
+      technologies: [],
+      link: "#",
     },
     {
       title: "Menú y Gestión de Cafetería — Hospital San José",
@@ -67,7 +53,7 @@
       role: "Frontend & API Integration (Enoc Labs)",
       description:
         "Desarrollo de la interfaz de usuario y conexión con el sistema de administración para la cafetería del hospital. Diseñé e implementé vistas responsivas para la consulta del menú diario, platillos, agendas de eventos privados y contacto, optimizando la experiencia de navegación e integrando los datos dinámicos con el panel de gestión.",
-      technologies: ["Laravel 12", "PHP", "MVC", "JavaScript", "CSS3", "Blade"],
+      technologies: [],
       link: "https://www.cafeteria.hospitalessanjose.com/index.html",
     },
     {
@@ -76,13 +62,7 @@
       role: "Frontend & API Integration (Enoc Labs)",
       description:
         "Fui el encargado del desarrollo Frontend y de la integración de consumo de APIs para la plataforma de encuestas interactiva del Hospital San José. Diseñé y construí una interfaz fluida e intuitiva enfocada en la experiencia de usuario (UX), conectando las vistas visuales con los endpoints del servidor para la captura y envío en tiempo real de la retroalimentación de pacientes en áreas como Urgencias e Hospitalización. Esta integración garantizó un flujo de datos limpio, optimizando el posterior análisis de métricas de calidad.",
-      technologies: [
-        "JavaScript",
-        "Express",
-        "REST APIs",
-        "JSON",
-        "HTML5/CSS3",
-      ],
+      technologies: [],
       link: "#",
     },
     {
@@ -91,7 +71,7 @@
       role: "Frontend Developer (Enoc Labs)",
       description:
         "Desarrollo de la interfaz de usuario para una plataforma de administración municipal. Diseñé e implementé vistas modernas, claras y funcionales que permiten a los usuarios gestionar información clave de manera eficiente, segura e intuitiva.",
-      technologies: ["Laravel 12", "PHP", "MVC", "JavaScript", "CSS3", "Blade"],
+      technologies: [],
       link: "#",
     },
   ];
@@ -165,6 +145,9 @@
       <div class="project-techs">
         ${project.technologies.map((t) => `<span class="project-tech-tag">${escapeHTML(t)}</span>`).join("")}
       </div>
+      <a href="${project.link}" target="_blank" class="fas fa-external-link-alt">
+        Ver Proyecto <i class="fas fa-external-link-alt"></i>
+      </a>
     </article>
   `,
       )
