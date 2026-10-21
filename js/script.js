@@ -36,7 +36,7 @@
         "Desarrolle por mi cuentauna web de gestión de ventas y toma de pedidos. Permite al personal de la taqueria tomar pedidos de los clientes y registro de ventas, como la generación de tickets digitales enviados directamente al correo electrónico del cliente y implementación de seguridad de expiración de tiempo definido.",
       technologies: ["Laravel 12", "PHP", "MVC", "JavaScript", "CSS3", "Blade"],
       link: "https://github.com/dev04enoclabs-lang/Chtacos-web",
-      link2: "",
+      image: "img/chtacos-preview.png",
     },
     // {
     //   title: "Bimbo — Plataforma Management & Control de Ventas",
@@ -46,14 +46,13 @@
     //     "Desarrollo Frontend y Backend para plataforma de administración corporativa. Implementación de módulos para el control de dispositivos, gestión de usuarios por departamento y visualización analítica de ventas en tiempo real.",
     //   technologies: [],
     //   link: "https://bimbo.aucome.com.mx/",
-    //   link2: "",
     // },
     {
       title: "Menú y Gestión de Cafetería — Hospital San José",
       category: "Full Stack & Web Platform",
       role: "Frontend & API Integration (Enoc Labs)",
       description:
-      "En mi tiempo en Enoc Labs y su equipo mi colaboración fue desarrollar el frontend del sitio web completo de la cafetería del Hospital San José, creando una plataforma moderna y funcional. El sitio facilita el acceso al menú diario, los platillos disponibles, eventos privados, ubicación y datos de contacto, ofreciendo una experiencia intuitiva para colaboradores, pacientes y visitantes. Además, permite una administración eficiente del contenido para mantener la información siempre actualizada.",
+        "En mi tiempo en Enoc Labs y su equipo mi colaboración fue desarrollar el frontend del sitio web completo de la cafetería del Hospital San José, creando una plataforma moderna y funcional. El sitio facilita el acceso al menú diario, los platillos disponibles, eventos privados, ubicación y datos de contacto, ofreciendo una experiencia intuitiva para colaboradores, pacientes y visitantes. Además, permite una administración eficiente del contenido para mantener la información siempre actualizada.",
       technologies: [
         "Laravel 12",
         "PHP",
@@ -64,6 +63,7 @@
         "MySQL",
       ],
       link: "https://www.cafeteria.hospitalessanjose.com/",
+      image: "img/chtacos-preview.png",
     },
     {
       title: "Hospital San José — Sistema de Encuestas",
@@ -73,7 +73,7 @@
         "Fui el encargado del desarrollo Frontend y de la integración de consumo de APIs para la plataforma de encuestas interactiva del Hospital San José. Diseñé y construí una interfaz fluida e intuitiva enfocada en la experiencia de usuario (UX), conectando las vistas visuales con los endpoints del servidor para la captura y envío en tiempo real de la retroalimentación de pacientes en áreas como Urgencias e Hospitalización. Esta integración garantizó un flujo de datos limpio, optimizando el posterior análisis de métricas de calidad.",
       technologies: [],
       link: "#",
-      link2: "#",
+      image: "img/chtacos-preview.png",
     },
     {
       title: "SMKT — Sistema de Gestión Centro de Acopio Municipal",
@@ -83,7 +83,7 @@
         "Desarrollo de la interfaz de usuario para una plataforma de administración municipal. Diseñé e implementé vistas modernas, claras y funcionales que permiten a los usuarios gestionar información clave de manera eficiente, segura e intuitiva.",
       technologies: [],
       link: "#",
-      link2: "#",
+      image: "img/chtacos-preview.png",
     },
   ];
 
@@ -156,9 +156,9 @@
       <div class="project-techs">
         ${project.technologies.map((t) => `<span class="project-tech-tag">${escapeHTML(t)}</span>`).join("")}
       </div></br>
-      <a href="${project.link}" target="_blank" class="fas fa-external-link-alt">
+      <button onclick="window.open('${project.link}', '_blank')" class="btn-project">
         Ver Proyecto <i class="fas fa-external-link-alt"></i>
-      </a>
+      </button>
     </article>
   `,
       )
