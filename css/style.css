@@ -639,3 +639,89 @@ body {
     transform: scale(1.05);
     box-shadow: 0 0 12px rgba(96, 165, 250, 0.3);
 }
+
+/* ==========================================
+   CARRUSEL ENTRE HEADER Y MAIN
+   ========================================== */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 380px;
+    margin: 1.5rem auto 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0d0e12;
+}
+
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Botones de navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(13, 14, 18, 0.75);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+    /* Oculto por defecto */
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+}
+
+.carousel-btn:hover {
+    background: #7AB4FA;
+    color: #0d0e12;
+    border-color: #11509d;
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+/* Mostrar botones solo cuando el cursor está sobre el carrusel */
+.carousel-container:hover .carousel-btn {
+    opacity: 1;
+    visibility: visible;
+}
