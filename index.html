@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Alberto Cruz Hernandez | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
     <meta name="description"
         content="Desarrollador de software especializado en diseño y desarrollo de soluciones frontend, backend y móvil.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body class="bg-main text-primary">
@@ -29,6 +32,29 @@
             </nav>
         </div>
     </header>
+
+    <div class="carousel-container" id="heroCarousel">
+        <div class="carousel-track">
+            <!-- <div class="carousel-slide active">
+                <img src="img/bimbo.png" alt="Proyecto 1">
+            </div> -->
+            <div class="carousel-slide">
+                <img src="img/cafeteria.png" alt="Proyecto 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="img/HSJ-Admin.png" alt="Proyecto 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="img/smkt.png" alt="Proyecto 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="img/Survey-HSJ.png" alt="Proyecto 5">
+            </div>
+        </div>
+
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+    </div>
 
     <main>
         <!-- HERO SECTION -->
@@ -55,26 +81,71 @@
                     <span class="section-label">[ 01 / PERFIL ]</span>
                     <h2 class="section-title">Enfoque y Especialidad</h2>
                 </div>
+
+                <!-- Fila 1: Frontend -->
                 <div class="row-3-col content-row">
                     <div class="col-meta">
-                        <span class="meta-tag">Áreas Core</span>
+                        <span class="meta-tag">Frontend & UX</span>
                     </div>
                     <div class="col-title">
-                        <h3>Arquitectura & Soluciones Integrales</h3>
+                        <h3>Interfaces Dinámicas & Responsivas</h3>
                     </div>
                     <div class="col-desc">
                         <p>
-                            Construcción de aplicaciones escalables y eficientes cubriendo el ciclo completo de vida del
-                            software: diseño de interfaces limpias, desarrollo de APIs robustas y aplicaciones
-                            multiplataforma.
+                            Diseño y desarrollo de interfaces de usuario modernas, responsivas y centradas en la
+                            experiencia de usuario (UX), conectando elementos visuales con lógica dinámica de clientes.
                         </p>
                         <div class="skills-chips">
-                            <span class="chip">Frontend (HTML5/CSS3/JS/React)</span>
-                            <span class="chip">Backend & REST APIs</span>
-                            <span class="chip">Desarrollo Móvil</span>
+                            <span class="chip">JavaScript (ES6+)</span>
+                            <span class="chip">Blade Templates</span>
+                            <span class="chip">HTML5 / CSS3</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- Fila 2: Backend -->
+                <div class="row-3-col content-row">
+                    <div class="col-meta">
+                        <span class="meta-tag">Backend & APIs</span>
+                    </div>
+                    <div class="col-title">
+                        <h3>Lógica de Servidor & Integración</h3>
+                    </div>
+                    <div class="col-desc">
+                        <p>
+                            Construcción de lógica de servidor robusta, gestión de peticiones HTTP, controladores,
+                            middlewares de seguridad, servicios web y consumo/creación de APIs REST.
+                        </p>
+                        <div class="skills-chips">
+                            <span class="chip">Laravel 12</span>
+                            <span class="chip">PHP</span>
+                            <span class="chip">Express</span>
+                            <span class="chip">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila 3: Arquitectura & Datos -->
+                <div class="row-3-col content-row">
+                    <div class="col-meta">
+                        <span class="meta-tag">Arquitectura</span>
+                    </div>
+                    <div class="col-title">
+                        <h3>Patrones & Bases de Datos</h3>
+                    </div>
+                    <div class="col-desc">
+                        <p>
+                            Estructuración de aplicaciones bajo el patrón de diseño MVC (Modelo-Vista-Controlador),
+                            modelado y consulta de bases de datos relacionales para un flujo de datos limpio.
+                        </p>
+                        <div class="skills-chips">
+                            <span class="chip">Patrón MVC</span>
+                            <span class="chip">MySQL</span>
+                            <span class="chip">JSON Data</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -192,6 +263,7 @@
                             <span class="tech-tag">JSON</span>
                             <span class="tech-tag">Asana</span>
                             <span class="tech-tag">PoStman</span>
+                            <span class="tech-tag">Xampp</span>
                         </div>
                     </div>
                 </div>
@@ -210,15 +282,16 @@
                         stack.
                     </p>
                     <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/jesus-alberto-cruz-hernandez" class="contact-cta"
-                            target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
+                        <a href="https://www.linkedin.com/" class="contact-cta" target="_blank"
+                            rel="noopener noreferrer">LinkedIn &rarr;</a>
                     </div>
                     <div class="contact-links">
                         <a href="https://github.com/jesuscruz" class="contact-cta" target="_blank"
                             rel="noopener noreferrer">GitHub &rarr;</a>
                     </div>
                     <div class="contact-links">
-                        <a href="" target="_blank" class="contact-cta">Correo Electrónico &rarr;</a>
+                        <a href="mailto:cruzjesusalberto312@gmail.com" target="_blank" class="contact-cta">Correo
+                            Electrónico &rarr;</a>
                     </div>
 
                     <div class="contact-links">
