@@ -9,7 +9,7 @@
     {
       period: "2024 — 2026",
       role: "Jesus — Full Stack Developer",
-      company: "Enoc Labs agency",
+      company: "Enoc Labs",
       description:
         "Desarrollo y soporte continuo para soluciones web y móviles de alto impacto: El Gran Corral, Drill Balance, Check IO, Mi FutX y proyectos complementarios.",
     },
@@ -29,61 +29,72 @@
   // Portafolio de Proyectos Destacados
   const projectsData = [
     {
-      title: "Ch'Tacos — Plataforma Web de Pedidos y Registro de Ventas",
+      title:
+        "Ch'Tacos — Plataforma Web de toma de Pedidos y Registro de Ventas",
       category: "Full Stack & Web Application",
       role: "Full Stack Developer",
       description:
-        "Desarrolle por mi cuentauna web de gestión de ventas y toma de pedidos. Permite al personal de la taqueria tomar pedidos de los clientes y registro de ventas, como la generación de tickets digitales enviados directamente al correo electrónico del cliente y implementación de seguridad de expiración de tiempo definido.",
-      technologies: ["Laravel 12", "PHP", "MVC", "JavaScript", "CSS3", "Blade"],
+        "Desarrolle una web de gestión de ventas que toma pedidos. Permite a los colaboradores tomar pedidos con mejor optimización y una mejor atención al clientes, como tambien regitra las ventas hechas por colaborador y la acomulación de ventas hechas por día, semana y mes, se implemento como el envio digital consumido por el cliente por vía correo electrónico, y como medida de seguridad se implemento una expiración de un tiempo de 8 hrs y implementación de autenticación basada en tokens y validación de sesión única por usuario .",
+      technologies: [
+        "Laravel 12",
+        "PHP",
+        "Arquitectura MVC",
+        "JavaScript",
+        "CSS3",
+        "Blade",
+      ],
       link: "https://github.com/dev04enoclabs-lang/Chtacos-web",
-      image: "img/chtacos-preview.png",
+      image: "img/Chtacos.png",
     },
     // {
-    //   title: "Bimbo — Plataforma Management & Control de Ventas",
-    //   category: "Full Stack & Enterprise Management",
-    //   role: "Full Stack Developer (En desarrollo)",
+    //   title: "Bimbo Go — Plataforma Web de Pedidos y Registro de Ventas",
+    //   category: "Full Stack & Web Application",
+    //   role: "Full Stack Developer",
     //   description:
-    //     "Desarrollo Frontend y Backend para plataforma de administración corporativa. Implementación de módulos para el control de dispositivos, gestión de usuarios por departamento y visualización analítica de ventas en tiempo real.",
-    //   technologies: [],
-    //   link: "https://bimbo.aucome.com.mx/",
+    //     "Desarrolle por mi cuentauna web de gestión de ventas y toma de pedidos. Permite al personal de la taqueria tomar pedidos de los clientes y registro de ventas, como la generación de tickets digitales enviados directamente al correo electrónico del client y implementación de seguridad de expiración de tiempo definido.",
+    //   technologies: ["Laravel 12", "PHP", "Arquitectura MVC", "JavaScript", "CSS3", "Blade"],
+    //   link: "https://github.com/dev04enoclabs-lang/Chtacos-web",
+    //   image: "img/bimbo.png",
     // },
     {
       title: "Menú y Gestión de Cafetería — Hospital San José",
       category: "Full Stack & Web Platform",
-      role: "Frontend & API Integration (Enoc Labs)",
+      role: "Frontend (Enoc Labs)",
       description:
-        "En mi tiempo en Enoc Labs y su equipo mi colaboración fue desarrollar el frontend del sitio web completo de la cafetería del Hospital San José, creando una plataforma moderna y funcional. El sitio facilita el acceso al menú diario, los platillos disponibles, eventos privados, ubicación y datos de contacto, ofreciendo una experiencia intuitiva para colaboradores, pacientes y visitantes. Además, permite una administración eficiente del contenido para mantener la información siempre actualizada.",
-      technologies: [
-        "Laravel 12",
-        "PHP",
-        "MVC",
-        "JavaScript",
-        "CSS3",
-        "Blade",
-        "MySQL",
-      ],
+        "En mi tiempo en Enoc Labs mi rol fue desarrollar el frontend del sitio web de la cafetería del Hospital San José, creando una plataforma moderna y funcional solicitado. El sitio facilita el acceso al menú diario que ofrece el Hospital San José, como platillos, eventos privados, ubicación y datos de contacto, ofreciendo una experiencia intuitiva para colaboradores, pacientes y visitantes. Además, permite una administración eficiente del contenido para mantener la información siempre actualizada.",
+      technologies: ["HTML5", "JavaScript", "CSS3"],
       link: "https://www.cafeteria.hospitalessanjose.com/",
-      image: "img/chtacos-preview.png",
+      image: "img/cafeteria.png",
     },
     {
       title: "Hospital San José — Sistema de Encuestas",
       category: "Web Platform & Management",
       role: "Frontend & API Integration (Enoc Labs)",
       description:
-        "Fui el encargado del desarrollo Frontend y de la integración de consumo de APIs para la plataforma de encuestas interactiva del Hospital San José. Diseñé y construí una interfaz fluida e intuitiva enfocada en la experiencia de usuario (UX), conectando las vistas visuales con los endpoints del servidor para la captura y envío en tiempo real de la retroalimentación de pacientes en áreas como Urgencias e Hospitalización. Esta integración garantizó un flujo de datos limpio, optimizando el posterior análisis de métricas de calidad.",
-      technologies: [],
+        "En mi tiempo en Enoclabs mi rol fue el desarrollo del Frontend y el consumo de APIs para la plataforma de encuestas para el Hospital San José. Se diseño y contruyo una interfaz fluida e intuitiva enfocada en la experiencia de usuario (UX) para dispositivos apple, conectando las vistas visuales con los endpoints del servidor y la plataforma de administración, para la captura y envío en tiempo real de información de pacientes en áreas como Urgencias e Hospitalización entre otros. Esta integración garantiza un flujo de datos optimizanda y la mejora de las áreas y atención a los pacientes.",
+      technologies: ["JavaScript", "Html", "Css"],
       link: "#",
-      image: "img/chtacos-preview.png",
+      image: "img/Survey-HSJ.png",
     },
     {
       title: "SMKT — Sistema de Gestión Centro de Acopio Municipal",
       category: "Web Platform & Management",
       role: "Frontend Developer (Enoc Labs)",
       description:
-        "Desarrollo de la interfaz de usuario para una plataforma de administración municipal. Diseñé e implementé vistas modernas, claras y funcionales que permiten a los usuarios gestionar información clave de manera eficiente, segura e intuitiva.",
-      technologies: [],
-      link: "#",
-      image: "img/chtacos-preview.png",
+        "En mi tiempo en Enoclabs, mi rol fue el desarrollo del Frontend y el consumo de APIs, para una plataforma de administración municipal. Diseñé e implementé vistas modernas y claras que permitan a los administradores gestionar la información de los participantes y el manejo de puntos recolectados por estos mismos y poder canjearlo por un premio, el porposito de la plataforma es insitar a las partisipantes recolectar residuos reciclables y sean premiados por su aportamiento auna buena causa.",
+      technologies: ["Laravel 12", "PHP", "JavaScript", "CSS3", "Blade"],
+      link: "https://admin.smktmexico.com/8u5zih5toxzdgbfo",
+      image: "img/smkt.png",
+    },
+        {
+      title: "HSJ-Adminitración — Sistema de Gestión Hospitalaria y Personal",
+      category: "Web Platform & Management",
+      role: "Frontend Developer (Enoc Labs)",
+      description:
+        "Actualización y expansión de plataforma, Participé en la modernización y desarrollo de la plataforma institucional de gestión para el Hospital San José (enfocada en optimizar la administración de medicos, pacientes, restaurante y áreas médicas). Fui responsable del desarrollo Frontend y colaboré en la actualización de la lógica del sistema, implementando nuevas interfaces de usuario para funciones solicitadas por el hospital. Asimismo, contribuí en la integración de flujos de seguridad críticos, incluyendo códigos de verificación y validación de correos corporativos, elevando la robustez y optimización general de la plataforma.",
+      technologies: ["HTML", "PHP", "PHPMailer", "Composer", "MySQL", "JavaScript", "CSS3",],
+      link: "https://admin.smktmexico.com/8u5zih5toxzdgbfo",
+      image: "img/HSJ-Admin.png",
     },
   ];
 
@@ -150,12 +161,13 @@
           <span class="project-tag">${escapeHTML(project.category)}</span>
           <span class="project-icon" aria-hidden="true">&#8599;</span>
         </div>
+        <div class="project-image-container">
+          <img class="project-image" src="${escapeHTML(project.image)}" alt="Vista previa del proyecto ${escapeHTML(project.title)}" loading="lazy">
+        </div>
         <h3 class="project-title">${escapeHTML(project.title)}</h3>
         <p class="project-desc">${escapeHTML(project.description)}</p>
       </div>
-      <div class="project-techs">
-        ${project.technologies.map((t) => `<span class="project-tech-tag">${escapeHTML(t)}</span>`).join("")}
-      </div></br>
+
       <button onclick="window.open('${project.link}', '_blank')" class="btn-project">
         Ver Proyecto <i class="fas fa-external-link-alt"></i>
       </button>
@@ -306,3 +318,7 @@ function initCarousel() {
 document.addEventListener("DOMContentLoaded", () => {
   initCarousel();
 });
+// Esta parte de este codigo, se encarga de mostrar en la Linea 170 las tegnologias con las que se trabajo en cada proyecto
+      // <div class="project-techs">
+      //   ${project.technologies.map((t) => `<span class="project-tech-tag">${escapeHTML(t)}</span>`).join("")}
+      // </div></br></br>
