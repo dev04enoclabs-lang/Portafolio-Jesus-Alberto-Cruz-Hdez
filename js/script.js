@@ -34,7 +34,7 @@
       category: "Full Stack & Web Application",
       role: "Full Stack Developer",
       description:
-        "Desarrolle una web de gestión de ventas que toma pedidos. Permite a los colaboradores tomar pedidos con mejor optimización y una mejor atención al clientes, como tambien regitra las ventas hechas por colaborador y la acomulación de ventas hechas por día, semana y mes, se implemento como el envio digital consumido por el cliente por vía correo electrónico, y como medida de seguridad se implemento una expiración de un tiempo de 8 hrs y implementación de autenticación basada en tokens y validación de sesión única por usuario .",
+        "Desarrolle una web de gestión de ventas que toma pedidos. Permite a los colaboradores tomar pedidos con mas eficacia y mejor atención al cliente, como tambien registra las ventas generadas por colaborador por día, semana y mes, se implemento envio digital de lo consumido por el cliente por vía correo electrónico, y como medida de seguridad se implemento una expiración de un tiempo de 8 hrs y la implementación de autenticación basada en tokens y validación de sesión única por usuario.",
       technologies: [
         "Laravel 12",
         "PHP",
