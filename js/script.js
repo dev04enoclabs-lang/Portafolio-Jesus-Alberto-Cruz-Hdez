@@ -9,34 +9,63 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultMessage = "Este sistema forma parte de una plataforma privada o en entorno local. Por políticas de seguridad, privacidad de datos y confidencialidad, la URL pública no está disponible.";
 
   function openPrivateModal(title, customMessage) {
-    modalTitle.textContent = title || "Proyecto Privado";
-    modalMessage.textContent = customMessage || defaultMessage;
+    if (!modal) return;
+
+    if (modalTitle) modalTitle.textContent = title || "Proyecto Privado";
+    if (modalMessage) modalMessage.textContent = customMessage || defaultMessage;
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
   }
 
   function closePrivateModal() {
+    if (!modal) return;
+
     modal.classList.remove("active");
     modal.setAttribute("aria-hidden", "true");
   }
 
-  // Interceptar clics en cualquier enlace de proyecto que tenga href="#"
   document.addEventListener("click", (e) => {
+    if (!(e.target instanceof Element)) return;
+
+    const projectButton = e.target.closest(".project-card .btn-project");
     const projectLink = e.target.closest(".project-card a, .project-link");
-    if (!projectLink) return;
+    const projectAction = projectButton || projectLink;
+    if (!projectAction) return;
 
-    const href = projectLink.getAttribute("href");
-    if (!href || href === "#") {
-      e.preventDefault(); // Evita que la página salte hacia arriba (#)
+    const projectUrl = projectButton
+      ? projectButton.dataset.projectUrl
+      : projectLink.getAttribute("href");
+    const normalizedUrl = projectUrl ? projectUrl.trim() : "";
 
-      // Obtener el título desde la tarjeta del proyecto
-      const card = projectLink.closest(".project-card");
-      const title = card ? card.querySelector(".project-title")?.textContent : "Proyecto Privado";
+    let validUrl = false;
+    if (normalizedUrl && !normalizedUrl.startsWith("#")) {
+      try {
+        const parsedUrl = new URL(normalizedUrl, document.baseURI);
+        validUrl = parsedUrl.protocol === "http:" || parsedUrl.protocol === "https:";
+      } catch {
+        validUrl = false;
+      }
+    }
 
-      // Si guardaste un mensaje personalizado en data-message del enlace, lo usa
-      const customMsg = projectLink.dataset.message || "";
+    if (!validUrl) {
+      e.preventDefault();
 
-      openPrivateModal(title, customMsg);
+      const card = projectAction.closest(".project-card");
+      const title = card
+        ? card.querySelector(".project-title")?.textContent
+        : "Proyecto Privado";
+      const customMessage =
+        projectButton?.dataset.projectMessage ||
+        projectLink?.dataset.message ||
+        "";
+
+      openPrivateModal(title, customMessage);
+      return;
+    }
+
+    if (projectButton) {
+      e.preventDefault();
+      window.open(normalizedUrl, "_blank", "noopener,noreferrer");
     }
   });
 
@@ -56,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Cerrar con la tecla Escape
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal.classList.contains("active")) {
+    if (e.key === "Escape" && modal?.classList.contains("active")) {
       closePrivateModal();
     }
   });
@@ -108,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "CSS3",
         "Blade",
       ],
-      link: "https://github.com/dev04enoclabs-lang/Chtacos-web",
+      link: "#",
       image: "img/Chtacos.png",
     },
     // {
@@ -234,7 +263,12 @@ document.addEventListener("DOMContentLoaded", () => {
         <p class="project-desc">${escapeHTML(project.description)}</p>
       </div>
 
-      <button onclick="window.open('${project.link}', '_blank')" class="btn-project">
+      <button
+        type="button"
+        data-project-url="${escapeHTML(project.link || "")}"
+        data-project-message="${escapeHTML(project.privateMessage || "")}"
+        class="btn-project"
+      >
         Ver Proyecto <i class="fas fa-external-link-alt"></i>
       </button>
     </article>
